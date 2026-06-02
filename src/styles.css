@@ -1,0 +1,522 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f3ee;
+  --bg-muted: #ebe5dc;
+  --card: #fffaf3;
+  --ink: #1e2428;
+  --muted: #667178;
+  --line: #d9d0c4;
+  --accent: #2563eb;
+  --accent-strong: #173f99;
+  --accent-soft: #dbe8ff;
+  --shadow: 0 22px 70px rgba(36, 45, 55, 0.12);
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.16), transparent 36rem),
+    var(--bg);
+  color: var(--ink);
+  margin: 0;
+}
+
+a {
+  color: var(--accent-strong);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.top-anchor {
+  display: block;
+  height: 0;
+}
+
+.skip-link {
+  background: var(--ink);
+  color: white;
+  left: 1rem;
+  padding: 0.6rem 0.8rem;
+  position: absolute;
+  top: -4rem;
+  z-index: 20;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.site-header {
+  backdrop-filter: blur(18px);
+  background: rgba(246, 243, 238, 0.82);
+  border-bottom: 1px solid rgba(217, 208, 196, 0.75);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 1rem 1.25rem;
+}
+
+.brand {
+  color: var(--ink);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.nav-links a {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.hero,
+.section {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 5rem 1.25rem;
+}
+
+.hero {
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.65fr);
+  min-height: 72vh;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 8vw, 6.8rem);
+  letter-spacing: -0.075em;
+  line-height: 0.9;
+  margin: 0;
+  max-width: 920px;
+}
+
+.role {
+  color: var(--accent-strong);
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  font-weight: 800;
+  margin: 1.4rem 0 0;
+  max-width: 760px;
+}
+
+.summary,
+.section-heading p {
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  max-width: 760px;
+}
+
+.eyebrow,
+.project-type {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  margin: 0 0 0.9rem;
+  text-transform: uppercase;
+}
+
+.button-row,
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.button,
+.ghost-button {
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 2.8rem;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+
+.button {
+  background: var(--card);
+  color: var(--ink);
+  box-shadow: 0 12px 30px rgba(36, 45, 55, 0.08);
+}
+
+.button-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.ghost-button {
+  background: transparent;
+  color: var(--accent-strong);
+}
+
+.proof-card,
+.resume-panel,
+.project-card,
+.capability-grid article,
+.artifact-card,
+.adapt-stages article,
+.builder-form,
+.builder-output {
+  background: rgba(255, 250, 243, 0.92);
+  border: 1px solid var(--line);
+  border-radius: 1.4rem;
+  box-shadow: var(--shadow);
+}
+
+.proof-card {
+  padding: 1.5rem;
+}
+
+.proof-card h2 {
+  font-size: 1rem;
+  margin: 0 0 1rem;
+}
+
+.proof-card ul {
+  color: var(--muted);
+  display: grid;
+  gap: 0.75rem;
+  line-height: 1.55;
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.resume-panel {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(16rem, 0.62fr) minmax(0, 1.38fr);
+  overflow: hidden;
+  padding: 1.25rem;
+}
+
+.resume-intro {
+  align-self: center;
+  padding: 1rem;
+}
+
+.resume-intro h2 {
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+  margin: 0;
+}
+
+.resume-intro p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.pdf-frame {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(219, 232, 255, 0.52)),
+    var(--bg-muted);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  min-height: 42rem;
+  overflow: hidden;
+}
+
+.pdf-frame object {
+  border: 0;
+  display: block;
+  height: 42rem;
+  width: 100%;
+}
+
+.pdf-frame p {
+  color: var(--muted);
+  line-height: 1.7;
+  padding: 2rem;
+}
+
+.section-muted {
+  background: transparent;
+}
+
+.section-heading {
+  margin-bottom: 2rem;
+}
+
+.section-heading h2 {
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+  margin: 0;
+}
+
+.project-grid,
+.capability-grid,
+.adapt-stages,
+.artifact-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: space-between;
+  padding: 1.35rem;
+}
+
+.project-card h3,
+.capability-grid h3,
+.adapt-stages h3 {
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.65rem;
+}
+
+.project-card p,
+.project-card dd,
+.capability-grid p,
+.adapt-stages p,
+.artifact-card p,
+.field small {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.project-card dl {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+}
+
+.project-card dt {
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-card dd {
+  margin: 0 0 0.6rem;
+}
+
+.adapt-stages {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-bottom: 1rem;
+}
+
+.adapt-stages article {
+  box-shadow: none;
+  padding: 1rem;
+}
+
+.adapt-stages span {
+  align-items: center;
+  background: var(--accent-soft);
+  border-radius: 999px;
+  color: var(--accent-strong);
+  display: inline-flex;
+  font-weight: 900;
+  height: 2rem;
+  justify-content: center;
+  margin-bottom: 0.85rem;
+  width: 2rem;
+}
+
+.builder-layout {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(18rem, 0.85fr) minmax(0, 1.15fr);
+}
+
+.builder-form,
+.builder-output {
+  padding: 1.2rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.field span {
+  font-weight: 900;
+}
+
+textarea {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  color: var(--ink);
+  font: inherit;
+  line-height: 1.45;
+  padding: 0.8rem;
+  resize: vertical;
+}
+
+textarea:focus {
+  border-color: var(--accent);
+  outline: 3px solid rgba(37, 99, 235, 0.16);
+}
+
+.builder-output {
+  min-width: 0;
+}
+
+.output-header {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.output-header h3 {
+  margin: 0;
+}
+
+pre {
+  background: #111827;
+  border-radius: 1rem;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+  max-height: 34rem;
+  overflow: auto;
+  padding: 1rem;
+  white-space: pre-wrap;
+}
+
+.capability-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.capability-grid article {
+  box-shadow: none;
+  padding: 1.2rem;
+}
+
+.artifact-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.artifact-card {
+  color: var(--ink);
+  display: block;
+  padding: 1.25rem;
+}
+
+.artifact-card span {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  align-items: center;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 2rem 1.25rem;
+}
+
+@media (max-width: 950px) {
+  .hero,
+  .resume-panel,
+  .builder-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .pdf-frame,
+  .pdf-frame object {
+    min-height: 34rem;
+    height: 34rem;
+  }
+
+  .project-grid,
+  .capability-grid,
+  .artifact-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .adapt-stages {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .project-grid,
+  .capability-grid,
+  .artifact-list,
+  .adapt-stages {
+    grid-template-columns: 1fr;
+  }
+
+  .hero,
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .resume-panel {
+    padding: 0.85rem;
+  }
+
+  .pdf-frame,
+  .pdf-frame object {
+    min-height: 28rem;
+    height: 28rem;
+  }
+
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
