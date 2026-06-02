@@ -218,6 +218,36 @@ a:hover {
   padding-left: 1.15rem;
 }
 
+.hero-absorption {
+  border-top: 1px solid var(--line);
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 860px;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.hero-absorption p {
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.hero-absorption .eyebrow {
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+}
+
+.hero-absorption-time {
+  color: var(--ink) !important;
+  font-size: clamp(1.5rem, 3.2vw, 2.7rem);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 1.02 !important;
+  margin-bottom: 0.85rem !important;
+}
+
 .resume-panel {
   display: grid;
   gap: 1.5rem;

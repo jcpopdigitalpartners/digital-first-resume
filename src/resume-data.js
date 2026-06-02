@@ -85,6 +85,46 @@ export const capabilities = [
   },
 ]
 
+export const aiAbsorption = {
+  eyebrow: 'AI feature absorption',
+  title: 'How Long It Took to Make the AI Feature Useful',
+  summary:
+    'This space documents the time it took to move from first contact with an AI capability to practical fluency. The emphasis is not instant mastery; it is the disciplined path from curiosity to a repeatable feature that can ship.',
+  total: 'About 10 focused hours from unfamiliar feature to resume-ready demo',
+  phases: [
+    {
+      duration: '1 hour',
+      title: 'Orientation',
+      details:
+        'Understood what the AI feature could and could not do, then identified the smallest workflow worth testing.',
+    },
+    {
+      duration: '2 hours',
+      title: 'Prompt and Instruction Design',
+      details:
+        'Converted the idea into Custom GPT behavior, system boundaries, and reusable instructions instead of one-off prompting.',
+    },
+    {
+      duration: '3 hours',
+      title: 'Skill and Workflow Packaging',
+      details:
+        'Captured the repeatable parts as a `.skill` file and an ADAPT workflow so another agent or builder could reuse the pattern.',
+    },
+    {
+      duration: '3 hours',
+      title: 'Mini App Integration',
+      details:
+        'Built the page experience that turns ADAPT inputs into an MCP-style server brief with tools, resources, guardrails, and validation steps.',
+    },
+    {
+      duration: '1 hour',
+      title: 'Deployment and Polish',
+      details:
+        'Published the result to GitHub Pages, fixed rough edges, and made the resume PDF and source artifacts accessible from the app.',
+    },
+  ],
+}
+
 export const adaptFramework = {
   name: 'ADAPT-to-MCP Builder',
   tagline:

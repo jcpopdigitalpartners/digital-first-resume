@@ -1,5 +1,6 @@
 import {
   adaptFramework,
+  aiAbsorption,
   artifactLinks,
   capabilities,
   deployedWork,
@@ -33,6 +34,11 @@ function renderProfile() {
         ${profile.proofPoints.map((point) => `<li>${point}</li>`).join('')}
       </ul>
     </aside>
+    <div class="hero-absorption" aria-label="AI feature absorption time">
+      <p class="eyebrow">${aiAbsorption.eyebrow}</p>
+      <p class="hero-absorption-time">${aiAbsorption.total}</p>
+      <p>${aiAbsorption.summary}</p>
+    </div>
   `
 }
 
