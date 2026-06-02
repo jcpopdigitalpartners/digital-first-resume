@@ -107,9 +107,10 @@ a:hover {
 .hero {
   align-items: center;
   display: grid;
-  gap: 2rem;
+  column-gap: 2rem;
   grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.65fr);
-  min-height: 72vh;
+  min-height: 82vh;
+  row-gap: clamp(3rem, 8vh, 6rem);
 }
 
 .hero h1 {
@@ -222,6 +223,7 @@ a:hover {
   border-top: 1px solid var(--line);
   grid-column: 1 / -1;
   justify-self: center;
+  margin-top: clamp(1rem, 4vh, 3.5rem);
   max-width: 860px;
   padding-top: 1.5rem;
   text-align: center;
@@ -533,6 +535,15 @@ pre {
   .hero,
   .section {
     padding: 3rem 1rem;
+  }
+
+  .hero {
+    min-height: auto;
+    row-gap: 2.5rem;
+  }
+
+  .hero-absorption {
+    margin-top: 0.5rem;
   }
 
   .resume-panel {
