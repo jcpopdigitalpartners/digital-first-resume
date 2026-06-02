@@ -14,6 +14,10 @@ export const profile = {
       label: 'GitHub',
       url: 'https://github.com/jcpopdigitalpartners',
     },
+    {
+      label: 'Live Resume Source',
+      url: 'https://github.com/jcpopdigitalpartners/digital-first-resume',
+    },
   ],
 }
 
