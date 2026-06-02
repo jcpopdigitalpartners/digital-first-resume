@@ -182,3 +182,16 @@ export const artifactLinks = [
     description: 'Step-by-step workflow for discovery, design, scaffold, validation, and packaging.',
   },
 ]
+
+export const coverLetter = {
+  eyebrow: 'Cover letter',
+  title: 'I build the bridge between AI capability and human adoption.',
+  hero:
+    'My work sits where technical systems, learning design, and operational change meet: turning emerging AI features into useful products, training systems, automations, and measurable enablement programs.',
+  paragraphs: [
+    'Across 15+ years in technical program management, instructional design, automation, and digital learning, I have built certification programs, role-based AI learning experiences, dashboards, templates, and self-service workflows that help teams move faster with more confidence.',
+    'The resume above shows the pattern: I translate complex systems into practical experiences, align stakeholders around clear requirements, and ship artifacts people can use. That has included AI customer-zero work, OpenAI and vector-search integrations, CI/CD publishing workflows, React and TypeScript interfaces, Python automations, and certification programs that improved onboarding, learner satisfaction, and operational efficiency.',
+    'I am strongest in roles that need someone who can absorb a new AI capability quickly, explain it clearly, prototype it responsibly, and turn it into a repeatable operating system for teams.',
+  ],
+  signature: 'JC Choi',
+}

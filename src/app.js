@@ -3,6 +3,7 @@ import {
   aiAbsorption,
   artifactLinks,
   capabilities,
+  coverLetter,
   deployedWork,
   profile,
   resumeDocument,
@@ -298,9 +299,24 @@ function renderArtifacts() {
   `
 }
 
+function renderCoverLetter() {
+  byId('cover-letter').innerHTML = `
+    <article class="cover-letter">
+      <p class="eyebrow">${coverLetter.eyebrow}</p>
+      <h2 id="cover-letter-title">${coverLetter.title}</h2>
+      <p class="cover-letter-hero">${coverLetter.hero}</p>
+      <div class="cover-letter-body">
+        ${coverLetter.paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join('')}
+      </div>
+      <p class="cover-letter-signature">${coverLetter.signature}</p>
+    </article>
+  `
+}
+
 renderProfile()
 renderResumeDocument()
 renderWork()
 renderBuilder()
 renderSystems()
 renderArtifacts()
+renderCoverLetter()
